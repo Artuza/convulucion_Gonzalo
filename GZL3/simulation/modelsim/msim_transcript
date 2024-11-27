@@ -1,0 +1,161 @@
+# Reading D:/Q/modelsim_ase/tcl/vsim/pref.tcl
+# do GZL3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/Q/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Q/GZL3 {D:/Q/GZL3/convolution.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:17:23 on Nov 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Q/GZL3" D:/Q/GZL3/convolution.v 
+# -- Compiling module convolution
+# 
+# Top level modules:
+# 	convolution
+# End time: 23:17:23 on Nov 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Q/GZL3 {D:/Q/GZL3/convolution_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:17:23 on Nov 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Q/GZL3" D:/Q/GZL3/convolution_tb.v 
+# -- Compiling module convolution_tb
+# 
+# Top level modules:
+# 	convolution_tb
+# End time: 23:17:23 on Nov 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  convolution_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" convolution_tb 
+# Start time: 23:17:23 on Nov 26,2024
+# Loading work.convolution_tb
+# Loading work.convolution
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Señal 1 (signal1):
+# signal1[0] =   819
+# signal1[1] = 63570
+# signal1[2] =  1311
+# 
+# Señal 2 (signal2):
+# signal2[0] = 51001
+# signal2[1] = 40715
+# signal2[2] = 55950
+# signal2[3] = 34900
+# signal2[4] =   454
+# signal2[5] = 24684
+# signal2[6] = 46888
+# signal2[7] = 23369
+# signal2[8] = 25588
+# signal2[9] = 21476
+# signal2[10] = 44186
+# signal2[11] = 27594
+# signal2[12] = 20161
+# signal2[13] = 48570
+# signal2[14] = 59127
+# signal2[15] = 34814
+# signal2[16] = 59325
+# signal2[17] = 10174
+# signal2[18] = 60053
+# signal2[19] = 44618
+# signal2[20] = 57157
+# signal2[21] = 41852
+# signal2[22] = 25378
+# signal2[23] = 65093
+# signal2[24] = 61161
+# signal2[25] = 45456
+# signal2[26] = 63412
+# signal2[27] = 34636
+# signal2[28] = 28376
+# signal2[29] = 22796
+# signal2[30] = 37971
+# signal2[31] =  3197
+# signal2[32] = 25275
+# signal2[33] = 45444
+# signal2[34] =  6946
+# signal2[35] =  7018
+# signal2[36] = 35255
+# signal2[37] = 49559
+# signal2[38] = 16073
+# signal2[39] = 65531
+# signal2[40] = 37643
+# signal2[41] = 38268
+# signal2[42] = 19225
+# signal2[43] = 38405
+# signal2[44] = 30748
+# signal2[45] = 55957
+# signal2[46] = 55975
+# signal2[47] = 59923
+# signal2[48] = 28733
+# signal2[49] = 27245
+# 
+# Resultados de la Convolución (conv_result):
+# conv_result[0] = 4283063131
+# conv_result[1] =    8247411
+# conv_result[2] =   21891767
+# conv_result[3] = 4256182157
+# conv_result[4] =   48034956
+# conv_result[5] = 4274127132
+# conv_result[6] = 4231761034
+# conv_result[7] =   88161903
+# conv_result[8] = 4245532886
+# conv_result[9] = 4292886891
+# conv_result[10] = 4268805698
+# conv_result[11] =   92728622
+# conv_result[12] = 4229239501
+# conv_result[13] = 4277611350
+# conv_result[14] =   54537256
+# conv_result[15] = 4260163646
+# conv_result[16] =   46910444
+# conv_result[17] = 4275234086
+# conv_result[18] = 4262332014
+# conv_result[19] =    6985850
+# conv_result[20] =   27074174
+# conv_result[21] = 4264619716
+# conv_result[22] =   56362457
+# conv_result[23] = 4213661607
+# conv_result[24] =   30558371
+# conv_result[25] = 4286542253
+# conv_result[26] =   32002099
+# conv_result[27] = 4247511100
+# conv_result[28] =   81204780
+# conv_result[29] = 4217340104
+# conv_result[30] = 4264775561
+# conv_result[31] =   86696689
+# conv_result[32] = 4273244504
+# conv_result[33] = 4233012565
+# conv_result[34] =   78325171
+# conv_result[35] = 4260718590
+# conv_result[36] = 4265475975
+# conv_result[37] =   55647881
+# conv_result[38] =    4876178
+# conv_result[39] = 4242417836
+# conv_result[40] = 4293204462
+# conv_result[41] =   32498591
+# conv_result[42] =   32786440
+# conv_result[43] = 4199202309
+# conv_result[44] =  103726133
+# conv_result[45] = 4191102786
+# conv_result[46] =   51312483
+# conv_result[47] =    1641810
+# conv_result[48] =   22033014
+# conv_result[49] = 4253433230
+# conv_result[50] = 4279072589
+# conv_result[51] =   35718195
+# ** Note: $stop    : D:/Q/GZL3/convolution_tb.v(50)
+#    Time: 10 ps  Iteration: 0  Instance: /convolution_tb
+# Break in Module convolution_tb at D:/Q/GZL3/convolution_tb.v line 50
+# End time: 23:18:51 on Nov 26,2024, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 0
